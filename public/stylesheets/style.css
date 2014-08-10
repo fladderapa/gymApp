@@ -1,0 +1,118 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E5E5E5 !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+p{
+	font-size: 28px;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+select{
+	height: 30px;
+	border-radius: 5px;
+}
+
+.kg{
+	font-size: 18px;
+	margin-top: 14px;
+}
+
+.card.hovercard {
+position: relative;
+width: 500px !important;
+padding-top: 0;
+overflow: hidden;
+text-align: center;
+background-color: #fff;
+}
+
+.card {
+padding-top: 20px;
+margin: 10px 0 20px 0;
+background-color: #ffffff;
+border: 1px solid #d8d8d8;
+border-top-width: 0;
+border-bottom-width: 2px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.card.hovercard .avatar {
+position: relative;
+top: -40px;
+margin-bottom: -40px;
+}
+
+.card.hovercard .avatar img {
+width: 80px;
+height: 80px;
+max-width: 80px;
+max-height: 80px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+
+.card.hovercard {
+position: relative;
+width: 240px;
+padding-top: 0;
+overflow: hidden;
+text-align: center;
+background-color: #fff;
+}
+
+.card.hovercard .info {
+padding: 4px 8px 10px;
+}
+
+.card.hovercard .bottom {
+padding: 0 20px;
+margin-bottom: 17px;
+}
+
+.card.hovercard .info .title {
+margin-bottom: 4px;
+font-size: 24px;
+line-height: 1;
+color: #262626;
+vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+overflow: hidden;
+font-size: 14px;
+line-height: 20px;
+color: #737373;
+text-overflow: ellipsis;
+}

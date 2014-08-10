@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	form(method="post", enctype="multipart/form-data", action="/card-upload")
+		
+		div.card.hovercard
+			img.img-responsive(src="http://fc00.deviantart.net/fs70/i/2011/232/c/b/bodybuilder_21_by_stonepiler-d478dwu.jpg")
+			div.avatar
+				img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
+			div.info
+				div.title
+					select.selectpicker.btn-info(name="week")
+						option(type="text", selected="selected", value="#{parseInt(moment(Date.now()).format('ww'))}") Vecka #{parseInt(moment(Date.now()).format('ww')-33)}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+1}") Vecka #{parseInt(moment(Date.now()).format('ww'))-32}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+2}") Vecka #{parseInt(moment(Date.now()).format('ww'))-31}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+3}") Vecka #{parseInt(moment(Date.now()).format('ww'))-30}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+4}") Vecka #{parseInt(moment(Date.now()).format('ww'))-29}
+				div.desc
+					input(type="number", value="60" name="weight", min="50", max="150", style="margin-top: 7px;")
+					| kg
+			div.bottom
+				input(type="file", name="thumbnail", style=" margin-left: 40%; margin-bottom: 15px; margin-top: 10px;")
+				input.btn.btn-primary(type="submit")

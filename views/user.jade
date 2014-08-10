@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	.container( style="margin-top: 50px;")
+		.row
+			.col-md-6
+				form(role="form", action="/storeProduct", method="post")
+					h1 Produkter
+					p
+						a.btn.btn-success#create Lägg till ny produkt
+							i.fa.fa-plus-square
+					div.form-group
+						label(for="name") Produkt
+						input.form-control(name="name", id="name", placeholder="Produkt")
+						button.btn.btn-info(type="submit") Lägg till
+				table.table
+					thead
+						tr
+							th Produkter
+							th
+					-each item in user.items
+						tr
+							td
+								|#{item}
+							td
+							td
+							td
+								form(method="GET", action="/user/#{user._id}")
+									button.btn.btn-primary(type="submit") Välj
+							td
+								form(method="GET", action="/deleteProduct/#{user._id}")
+									button.btn.btn-danger(type="submit") Radera
+	script
+		
+		
+
+					

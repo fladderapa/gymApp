@@ -1,0 +1,21 @@
+{
+  "name": "logr.co",
+  "version": "0.0.0",
+  "homepage": "http://www.logr.co",
+  "authors": [
+    "josephbadran <joseph@kondensator.se>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}

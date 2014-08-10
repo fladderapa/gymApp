@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+	- each card in cards
+		div.card.hovercard
+			img.img-responsive(src="#{card.imgUrl}")
+			div.avatar
+				img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
+			div.info
+				div.title
+					|Vecka #{card.week}
+				div.desc #{card.weight}kg
+				div.desc #{card.time}
+			div.bottom
+				a(href="/newCard")
+					button.btn Add
