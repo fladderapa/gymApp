@@ -1,17 +1,58 @@
 extends layout
 
 block content
-
-	- each card in cards
-		div.card.hovercard
-			img.img-responsive(src="#{card.imgUrl}")
-			div.avatar
-				img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
-			div.info
-				div.title
-					|Vecka #{card.week}
-				div.desc #{card.weight}kg
-				div.desc #{card.time}
-			div.bottom
-				a(href="/newCard")
-					button.btn Add
+	.section
+		.row
+			.col-md-6
+				div.card.hovercard
+					img.img-responsive(src="#{newestAlex.imgUrl}")
+					div.avatar
+						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
+					div.info
+						div.title
+							|Vecka #{newestAlex.week}
+						div.desc #{newestAlex.weight}kg
+						div.desc #{newestAlex.time}
+					div.bottom
+						a(href="/newCardAlex")
+							button.btn Add
+			.col-md-6
+				div.card.hovercard
+					img.img-responsive(src="#{newestLukas.imgUrl}")
+					div.avatar
+						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c21.21.267.267/302778_10152241515830335_1689691554_n.jpg")
+					div.info
+						div.title
+							|Vecka #{newestLukas.week}
+						div.desc #{newestLukas.weight}kg
+						div.desc #{newestLukas.time}
+					div.bottom
+						a(href="/newCardLukas")
+							button.btn Add
+		.row
+			.col-md-6
+				div.card.hovercard
+					img.img-responsive(src="#{oldestAlex.imgUrl}")
+					div.avatar
+						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
+					div.info
+						div.title
+							|Vecka #{oldestAlex.week}
+						div.desc #{oldestAlex.weight}kg
+						div.desc #{oldestAlex.time}
+					div.bottom
+						a(href="/newCardAlex")
+							button.btn Add
+			.col-md-6
+				div.card.hovercard
+					img.img-responsive(src="#{oldestLukas.imgUrl}")
+					div.avatar
+						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c21.21.267.267/302778_10152241515830335_1689691554_n.jpg")
+					div.info
+						div.title
+							|Vecka #{oldestLukas.week}
+						div.desc #{oldestLukas.weight}kg
+						div.desc #{oldestLukas.time}
+					div.bottom
+						a(href="/newCardLukas")
+							button.btn Add

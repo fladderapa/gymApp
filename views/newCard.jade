@@ -10,14 +10,15 @@ block content
 			div.info
 				div.title
 					select.selectpicker.btn-info(name="week")
-						option(type="text", selected="selected", value="#{parseInt(moment(Date.now()).format('ww'))}") Vecka #{parseInt(moment(Date.now()).format('ww')-33)}
-						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+1}") Vecka #{parseInt(moment(Date.now()).format('ww'))-32}
-						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+2}") Vecka #{parseInt(moment(Date.now()).format('ww'))-31}
-						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+3}") Vecka #{parseInt(moment(Date.now()).format('ww'))-30}
-						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))+4}") Vecka #{parseInt(moment(Date.now()).format('ww'))-29}
+						option(type="text", selected="selected", value="#{parseInt(moment(Date.now()).format('ww'))-33}") Vecka #{parseInt(moment(Date.now()).format('ww')-33)}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))-32}") Vecka #{parseInt(moment(Date.now()).format('ww'))-32}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))-31}") Vecka #{parseInt(moment(Date.now()).format('ww'))-31}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))-30}") Vecka #{parseInt(moment(Date.now()).format('ww'))-30}
+						option(type="text", value="#{parseInt(moment(Date.now()).format('ww'))-29}") Vecka #{parseInt(moment(Date.now()).format('ww'))-29}
 				div.desc
 					input(type="number", value="60" name="weight", min="50", max="150", style="margin-top: 7px;")
 					| kg
 			div.bottom
 				input(type="file", name="thumbnail", style=" margin-left: 40%; margin-bottom: 15px; margin-top: 10px;")
+				input(type="hidden", name="name", value="#{name}")
 				input.btn.btn-primary(type="submit")
