@@ -33,8 +33,6 @@ router.get('/', function(req, res) {
 
 	});
 
-
-	
 });
 
 router.get('/newCardAlex', function(req, res) {
@@ -76,41 +74,6 @@ router.post('/card-upload', function (req, res) {
 	});
 });
 
-router.get('/user/:id', function(req, res){
-	id = req.params.id;
-	User.findById( id, function (err, user){
-		
-		res.render('user', {user:user});
-	});
-});
 
-router.get("/deleteUser/:id", function (req, res){
-	id = req.params.id;
-
-	User.findById( id, function ( err, user ){
-		user.remove( function ( err, user ){
-		  res.redirect( '/' );
-		});
-  });
-});
-
-router.post("/storeUser", function (req, res ) {
-	
-	var name = req.body.name;
-	var items = [];
-	var user = new User({ name: name, items: items });
-	
-	
-	user.save(function (err) {
-		if (err) // ...
-		console.log(err);
-	});
-	
-	User.find( function ( err, users, count ){
-		
-		res.redirect( '/' );
-	});
-
-});
 
 module.exports = router;

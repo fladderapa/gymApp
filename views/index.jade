@@ -5,7 +5,7 @@ block content
 		.row
 			.col-md-6
 				div.card.hovercard
-					img.img-responsive(src="#{newestAlex.imgUrl}")
+					img.img-responsive(src="#{newestAlex.imgUrl}", style="width:100% !important; max-height: 480px;")
 					div.avatar
 						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
 					div.info
@@ -18,21 +18,7 @@ block content
 							button.btn Add
 			.col-md-6
 				div.card.hovercard
-					img.img-responsive(src="#{newestLukas.imgUrl}")
-					div.avatar
-						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c21.21.267.267/302778_10152241515830335_1689691554_n.jpg")
-					div.info
-						div.title
-							|Vecka #{newestLukas.week}
-						div.desc #{newestLukas.weight}kg
-						div.desc #{newestLukas.time}
-					div.bottom
-						a(href="/newCardLukas")
-							button.btn Add
-		.row
-			.col-md-6
-				div.card.hovercard
-					img.img-responsive(src="#{oldestAlex.imgUrl}")
+					img.img-responsive(src="#{oldestAlex.imgUrl}", style="width:100% !important; max-height: 480px;")
 					div.avatar
 						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c1.70.318.318/p320x320/1377615_10153304925230533_685197182_n.jpg?oh=efe05b54ff334c716772a866fb2ec3a4&oe=5465F452&__gda__=1417087985_1560e9c2367b8d40e00a4a07057338c7")
 					div.info
@@ -43,9 +29,23 @@ block content
 					div.bottom
 						a(href="/newCardAlex")
 							button.btn Add
+		.row
 			.col-md-6
 				div.card.hovercard
-					img.img-responsive(src="#{oldestLukas.imgUrl}")
+					img.img-responsive(src="#{newestLukas.imgUrl}", style="width:100% !important; max-height: 480px;")
+					div.avatar
+						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c21.21.267.267/302778_10152241515830335_1689691554_n.jpg")
+					div.info
+						div.title
+							|Vecka #{newestLukas.week}
+						div.desc #{newestLukas.weight}kg
+						div.desc #{newestLukas.time}
+					div.bottom
+						a(href="/newCardLukas")
+							button.btn Add
+			.col-md-6
+				div.card.hovercard
+					img.img-responsive(src="#{oldestLukas.imgUrl}", style="width:100% !important; max-height: 480px;")
 					div.avatar
 						img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c21.21.267.267/302778_10152241515830335_1689691554_n.jpg")
 					div.info

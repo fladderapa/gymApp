@@ -42,12 +42,14 @@ select{
 
 .card.hovercard {
 position: relative;
-width: 500px !important;
+width: 100% !important;
 padding-top: 0;
 overflow: hidden;
 text-align: center;
 background-color: #fff;
 }
+
+
 
 .card {
 padding-top: 20px;
